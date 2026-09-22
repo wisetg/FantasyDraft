@@ -1,0 +1,66 @@
+.page {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  margin: 0;
+
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.header p {
+  margin-top: 12px;
+
+  font-size: 18px;
+  color: #666;
+}
+
+.player-section h2 {
+  margin-bottom: 20px;
+}
+
+.player-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(240px, 1fr)
+    );
+
+  gap: 16px;
+}
+
+.player-card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+
+  padding: 20px;
+
+  background: white;
+
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.player-card strong {
+  font-size: 18px;
+}
+
+.player-card span {
+  color: #666;
+}
+
+.error {
+  color: #c62828;
+}

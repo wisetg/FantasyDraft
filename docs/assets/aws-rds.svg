@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Amazon RDS">
+  <ellipse cx="32" cy="15" rx="20" ry="9" fill="#5279b9"/>
+  <path d="M12 15v28c0 5 9 10 20 10s20-5 20-10V15" fill="#6d92ca"/>
+  <path d="M12 28c0 5 9 9 20 9s20-4 20-9M12 40c0 5 9 9 20 9s20-4 20-9" fill="none" stroke="#dbe7fa" stroke-width="2.5"/>
+</svg>

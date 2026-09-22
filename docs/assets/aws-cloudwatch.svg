@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Amazon CloudWatch">
+  <rect x="8" y="8" width="48" height="48" rx="8" fill="#5376b8"/>
+  <path d="M17 42V21m10 21V29m10 13V17m10 25V25" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+  <path d="m16 32 11-8 10 5 11-11" fill="none" stroke="#dce8ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+</svg>

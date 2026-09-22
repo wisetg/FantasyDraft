@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        name="description"
+        content="FantasyDraft — NFL Fantasy Football 분석과 Sleeper 리그 기반 트레이드 분석 프로젝트"
+    />
+    <title>FantasyDraft | NFL Fantasy Analytics</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="FantasyDraft 홈">
+            FantasyDraft
+        </a>
+
+        <nav class="site-nav" aria-label="페이지 탐색">
+            <a href="#project">Project</a>
+            <a href="#features">Features</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#cloud">Cloud</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero section-shell">
+            <p class="eyebrow">NFL FANTASY ANALYSIS PLATFORM</p>
+            <h1>Fantasy Football 분석을 하나의 흐름으로 관리합니다.</h1>
+            <p class="hero-copy">
+                NFL 선수 기록과 Fantasy 데이터를 조회하고, 실제 Sleeper League의 로스터와
+                Scoring Rule을 반영하여 트레이드를 분석할 수 있도록 만든 개인 프로젝트입니다.
+            </p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="#features">주요 기능 보기</a>
+                <a class="button button-secondary" href="#architecture">시스템 구조 보기</a>
+            </div>
+
+            <div class="hero-metrics" aria-label="프로젝트 핵심 지표">
+                <div>
+                    <strong>51 / 51</strong>
+                    <span>Sleeper Scoring Rules</span>
+                </div>
+                <div>
+                    <strong>React + Spring</strong>
+                    <span>Full-stack Architecture</span>
+                </div>
+                <div>
+                    <strong>AWS</strong>
+                    <span>Deployment Validation</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="project" class="section-shell project-section">
+            <div class="section-heading">
+                <p class="eyebrow">PROJECT OVERVIEW</p>
+                <h2>FantasyDraft</h2>
+            </div>
+            <div class="project-grid">
+                <p class="project-lead">
+                    선수 기록을 단순히 조회하는 것에서 끝나지 않고,<br>
+                    실제 Scoring Rule과 로스터 구성을 반영해,<br>
+                    선수 가치와 트레이드를 분석하는 서비스를 구현하였습니다.
+                </p>
+                <p>
+                    React 기반 UI에서 선수 검색과 분석 기능을 제공하고,<br>
+                    Spring Boot API에서 선수 데이터와 리그 정보를 처리합니다.<br>
+                    Sleeper API를 이용해 실제 Fantasy League를 연결하고,<br>
+                    nflverse 데이터를 활용해 선수 기록을 관리하였습니다.
+                </p>
+            </div>
+        </section>
+
+        <section id="features" class="section-shell features-section">
+            <div class="section-heading split-heading">
+                <div>
+                    <p class="eyebrow">PRODUCT FEATURES</p>
+                    <h2>선수 분석부터<br />트레이드 결정까지</h2>
+                </div>
+                <p>
+                    리그 연결 → 선수 가치 계산 → 트레이드 분석<br>
+                    하나의 사용자 흐름으로 이어지도록 구현하였습니다.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="card-index">01</span>
+                    <h3>Player Search & Analysis</h3>
+                    <p>
+                        NFL 선수를 검색하고 시즌별 기록과 Fantasy 점수를 확인할 수 있도록 구현하였습니다.
+                        리그의 Scoring Rule에 따라 동일한 선수라도 다른 점수가 계산됩니다.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="card-index">02</span>
+                    <h3>Sleeper League Connection</h3>
+                    <p>
+                        Sleeper API를 통해 사용자의 실제 League와 Roster를 불러옵니다.<br>
+                        League별 Scoring Rule도 함께 가져와 분석 기준으로 사용합니다.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="card-index">03</span>
+                    <h3>Player Value</h3>
+                    <p>
+                        시즌 기록과 Fantasy 점수, 포지션 데이터를 기반으로 선수별 Trade Value를
+                        계산하도록 구현하였습니다.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="card-index">04</span>
+                    <h3>Trade Analysis</h3>
+                    <p>
+                        실제 League의 두 팀과 선수를 선택하면 양쪽의 Trade Value를 비교하고
+                        트레이드 균형을 확인할 수 있도록 구현하였습니다.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-shell service-section">
+            <div class="section-heading service-heading">
+                <p class="eyebrow">ACTUAL SERVICE</p>
+                <h2>FantasyDraft Analysis 화면</h2>
+                <p>
+                    FantasyDraft의 주요 기능을 실제 데이터와 함께 동작시킨 화면입니다.
+                    선수 검색부터 Sleeper League 연결, 실제 로스터를 이용한 Trade Analysis까지
+                    하나의 흐름으로 구현했습니다.
+                </p>
+            </div>
+
+            <div class="service-gallery">
+                <article class="service-shot service-shot-wide">
+                    <a
+                        href="assets/screenshot-home.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/screenshot-home.png"
+                            alt="FantasyDraft Home 화면"
+                        />
+                    </a>
+                    <div class="service-shot-copy">
+                        <span>01</span>
+                        <h3>FantasyDraft Home</h3>
+                        <p>Player Search와 Trade Analysis 두 기능으로 진입하는 FantasyDraft의 메인 화면입니다.</p>
+                    </div>
+                </article>
+
+                <article class="service-shot">
+                    <a
+                        href="assets/screenshot-player.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/screenshot-player.png"
+                            alt="Player Search 화면"
+                        />
+                    </a>
+                    <div class="service-shot-copy">
+                        <span>02</span>
+                        <h3>Player Search</h3>
+                        <p>NFL 선수 데이터베이스에서 선수를 검색하고, 선수별 시즌 기록과 Fantasy 분석 화면으로 이동할 수 있습니다.</p>
+                    </div>
+                </article>
+
+                <article class="service-shot">
+                    <a
+                        href="assets/screenshot-trade-1.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/screenshot-trade-1.png"
+                            alt="Sleeper League Connection 화면"
+                        />
+                    </a>
+                    <div class="service-shot-copy">
+                        <span>03</span>
+                        <h3>Sleeper League Connection</h3>
+                        <p>Sleeper Username과 시즌을 입력하여 실제 Fantasy League를 불러오고, 리그의 로스터와 Scoring Rule을 분석에 연결합니다.</p>
+                    </div>
+                </article>
+
+                <article class="service-shot service-shot-wide">
+                    <a
+                        href="assets/screenshot-trade-2.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/screenshot-trade-2.png"
+                            alt="Trade Analysis 결과 화면"
+                        />
+                    </a>
+                    <div class="service-shot-copy">
+                        <span>04</span>
+                        <h3>Trade Analysis</h3>
+                        <p>선수별 Trade Value를 계산하고 두 팀이 주고받는 가치의 차이와 Trade Fairness를 함께 보여주도록 구현했습니다.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="architecture" class="section-shell architecture-section">
+            <div class="section-heading">
+                <p class="eyebrow">SYSTEM ARCHITECTURE</p>
+                <h2>서비스 구조로 연결한 분석 경험</h2>
+            </div>
+
+            <div class="architecture-flow">
+                <article class="architecture-node client-node">
+                    <div class="card-top">
+                        <span class="node-label">CLIENT</span>
+                        <img class="tech-icon" src="assets/react.svg" alt="React" />
+                    </div>
+                    <h3>React + Vite</h3>
+                    <p>선수 검색, 분석, 리그 연결 및 Trade UI</p>
+                </article>
+                <div class="flow-arrow" aria-hidden="true">→</div>
+                <article class="architecture-node app-node">
+                    <div class="card-top">
+                        <span class="node-label">APPLICATION</span>
+                        <img class="tech-icon" src="assets/spring.svg" alt="Spring Boot" />
+                    </div>
+                    <h3>Spring Boot · Java 21</h3>
+                    <p>REST API, scoring engine, trade value 계산</p>
+                </article>
+                <div class="flow-arrow" aria-hidden="true">→</div>
+                <article class="architecture-node data-node">
+                    <div class="card-top">
+                        <span class="node-label">DATA</span>
+                        <img class="tech-icon" src="assets/postgresql.svg" alt="PostgreSQL" />
+                    </div>
+                    <h3>PostgreSQL</h3>
+                    <p>선수, 주차별 기록, 리그와 로스터 데이터</p>
+                </article>
+            </div>
+
+            <div class="architecture-notes">
+                <div><strong>Frontend</strong><span>React · Vite · CSS</span></div>
+                <div><strong>Backend</strong><span>Spring Boot 4 · JPA</span></div>
+                <div><strong>Data Sources</strong><span>Sleeper API · nflverse</span></div>
+            </div>
+        </section>
+
+        <section id="cloud" class="section-shell cloud-section">
+            <div class="section-heading cloud-heading">
+                <p class="eyebrow">AWS DEPLOYMENT VALIDATION</p>
+                <h2>클라우드 환경에서의<br />서비스 흐름</h2>
+                <p>
+                    로컬 환경에서 개발한 애플리케이션을 AWS에 직접 배포해 전체 서비스 흐름을 검증하였습니다.<br>
+                    React와 Spring Boot를 EC2에서 실행하고 PostgreSQL은 RDS로 분리했으며,<br>
+                    Lambda를 이용한 데이터 동기화 호출과 CloudWatch 로그 확인을 진행하였습니다.
+                </p>
+            </div>
+
+            <div class="cloud-stack">
+                <article>
+                    <div class="card-top">
+                        <span>EC2</span>
+                        <img class="tech-icon" src="assets/aws-ec2.svg" alt="Amazon EC2" />
+                    </div>
+                    <strong>Application Server</strong>
+                    <p>Nginx에서 React 정적 파일을 제공하고 <code>/api</code> 요청은 Spring Boot로 Reverse Proxy하도록 구성하였습니다.</p>
+                </article>
+                <article>
+                    <div class="card-top">
+                        <span>RDS</span>
+                        <img class="tech-icon" src="assets/aws-rds.svg" alt="Amazon RDS" />
+                    </div>
+                    <strong>PostgreSQL</strong>
+                    <p>선수 기록, Fantasy League, Roster 및 분석 데이터를 PostgreSQL에 저장하고 EC2의 Spring Boot 애플리케이션과 연결하였습니다.</p>
+                </article>
+                <article>
+                    <div class="card-top">
+                        <span>Lambda + CloudWatch</span>
+                        <span class="tech-icon-group">
+                            <img class="tech-icon" src="assets/aws-lambda.svg" alt="AWS Lambda" />
+                            <img class="tech-icon" src="assets/aws-cloudwatch.svg" alt="Amazon CloudWatch" />
+                        </span>
+                    </div>
+                    <strong>Data Sync</strong>
+                    <p>Lambda에서 nflverse 선수 기록 동기화 API를 호출하고 실행 결과와 로그를 CloudWatch에서 확인하였습니다.</p>
+                </article>
+            </div>
+
+            <p class="cloud-note">
+                기능 검증 후 불필요한 AWS 비용이 발생하지 않도록 테스트에 사용한 리소스는 모두 정리하였습니다.
+            </p>
+        </section>
+
+        <section class="section-shell closing-section">
+            <p class="eyebrow">BUILT FOR PRACTICAL DECISIONS</p>
+            <h2>Fantasy Football의 복잡한 판단을<br />설명 가능한 데이터로 바꿉니다</h2>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>FantasyDraft</span>
+        <span>Portfolio Project · React · Spring Boot · AWS</span>
+    </footer>
+</body>
+</html>
